@@ -60,6 +60,10 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddAuthorization(options =>{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+});
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(MyAllowSpecificOrigins, policy =>
