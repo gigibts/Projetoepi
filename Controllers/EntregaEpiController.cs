@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace projetoepi.Controllers
 /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EntregaEpiController : ControllerBase
     {
         private readonly AppDbContext _context;

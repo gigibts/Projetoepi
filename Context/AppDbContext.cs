@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using projetoepi.Models;
 
 namespace projetoepi.Context;
 
-public partial class AppDbContext : DbContext
+public partial class AppDbContext : IdentityDbContext<ApplicationUser>
 {
     public AppDbContext()
     {
@@ -98,8 +99,12 @@ public partial class AppDbContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("entrega_epi_cod_epi_fkey");
         });
+        // modelBuilder.Ignore<CadastroEpi>();
+        // modelBuilder.Ignore<Colaborador>();
+        // modelBuilder.Ignore<EntregaEpi>();
 
-        OnModelCreatingPartial(modelBuilder);
+
+        base.OnModelCreating(modelBuilder);
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
