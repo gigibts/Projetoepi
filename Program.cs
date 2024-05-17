@@ -79,19 +79,16 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddCors(options =>
-{
-options.AddPolicy(MyAllowSpecificOrigins,
-
-policy =>
-{
-policy.WithOrigins("*")
-
-.AllowAnyHeader()
-.AllowAnyMethod();
-
+builder.Services.AddAuthorization(options =>{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins, policy =>
+    {
+        policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+    });
 });
 
 var app = builder.Build();
