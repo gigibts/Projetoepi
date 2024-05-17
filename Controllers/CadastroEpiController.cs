@@ -16,7 +16,7 @@ namespace projetoepi.Controllers
 /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize("Admin")]
     public class CadastroEpiController : ControllerBase
     {
         private readonly AppDbContext _context;

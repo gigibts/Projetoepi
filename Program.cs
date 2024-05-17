@@ -41,7 +41,26 @@ builder.Services.AddSwaggerGen(options =>
 });
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins,
+
+    policy =>
+    {
+        policy.WithOrigins("*")
+
+    .AllowAnyHeader()
+    .AllowAnyMethod();
+
+    });
+
+});
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+builder.Services.AddAuthorization(options => {
+   options.AddPolicy("Admin", policy=> policy.RequireRole("Admin"));
+});
 
 builder.Services.AddAuthentication(options =>
 {

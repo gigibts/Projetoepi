@@ -566,3 +566,7 @@ C:\Users\Aluno Dev\Documents\Dev\projetoepi\Projetoepi\obj\Debug\net7.0\scopedcs
 C:\Users\Aluno Dev\Documents\Dev\projetoepi\Projetoepi\obj\Debug\net7.0\projetoepi.csproj.CopyComplete
 C:\Users\Aluno Dev\Documents\Dev\projetoepi\Projetoepi\obj\Debug\net7.0\projetoepi.genruntimeconfig.cache
 C:\Users\Aluno Dev\Documents\Dev\projetoepi\Projetoepi\obj\Debug\net7.0\ref\projetoepi.dll
+C:\Users\Aluno Dev\Documents\dev\projetoepi\bin\Debug\net7.0\projetoepi.staticwebassets.runtime.json
+C:\Users\Aluno Dev\Documents\dev\projetoepi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Aluno Dev\Documents\dev\projetoepi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Aluno Dev\Documents\dev\projetoepi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno Dev\\Documents\\Dev\\projetoepi\\Projetoepi\\projetoepi.csproj": {}
+    "C:\\Users\\Aluno Dev\\Documents\\dev\\projetoepi\\projetoepi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno Dev\\Documents\\Dev\\projetoepi\\Projetoepi\\projetoepi.csproj": {
+    "C:\\Users\\Aluno Dev\\Documents\\dev\\projetoepi\\projetoepi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\Dev\\projetoepi\\Projetoepi\\projetoepi.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno Dev\\Documents\\dev\\projetoepi\\projetoepi.csproj",
         "projectName": "projetoepi",
-        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\projetoepi\\Projetoepi\\projetoepi.csproj",
+        "projectPath": "C:\\Users\\Aluno Dev\\Documents\\dev\\projetoepi\\projetoepi.csproj",
         "packagesPath": "C:\\Users\\Aluno Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\Dev\\projetoepi\\Projetoepi\\obj\\",
+        "outputPath": "C:\\Users\\Aluno Dev\\Documents\\dev\\projetoepi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
